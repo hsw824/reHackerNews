@@ -1,0 +1,282 @@
+/* Reset */
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* App */
+.App {
+  width: 375px;
+  height: 812px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+/* MyHeader */
+
+.MyHeader .header_info {
+  width: 375px;
+  height: 60px;
+  position: relative;
+}
+.MyHeader .header_info .logo {
+  position: absolute;
+  left: 21px;
+  bottom: 13px;
+  cursor: pointer;
+}
+.MyHeader .header_info .logo_title {
+  position: absolute;
+  top: 16px;
+  left: 60px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2.5%;
+  margin: 0;
+  cursor: pointer;
+}
+.MyHeader .header_info .dark {
+  position: absolute;
+  left: 288px;
+  top: 19px;
+  cursor: pointer;
+}
+
+.MyHeader .header_info .info {
+  position: absolute;
+  left: 329px;
+  top: 20px;
+}
+.MyHeader .gnb {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ff6600;
+  padding-bottom: 7px;
+  margin: 0 19px;
+}
+
+.MyHeader .gnb .nav {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #767676;
+  transition: all 0.5s;
+  border-radius: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.MyHeader .gnb .nav:hover {
+  background-color: #767676;
+  color: #fff;
+}
+.MyHeader .gnb .active {
+  background-color: #767676;
+  color: #fff;
+}
+/* myCheck */
+.myCheck {
+  width: 375px;
+  height: 52px;
+  position: relative;
+}
+.myCheck .checkButton img {
+  width: 8px;
+  height: 6px;
+}
+.myCheck .checkButton span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.myCheck .position1 img {
+  position: absolute;
+  top: 27px;
+  left: 26px;
+}
+
+.myCheck .position1 span {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.myCheck .position2 img {
+  position: absolute;
+  top: 27px;
+  left: 81px;
+}
+
+.myCheck .position2 span {
+  position: absolute;
+  top: 20px;
+  left: 95px;
+  color: #ff6600;
+}
+
+.myCheck .glassIcon {
+  width: 17.5px;
+  height: 17.5px;
+  position: absolute;
+  top: 21px;
+  left: 336.5px;
+}
+/* HOME */
+
+.Home h1 {
+  margin: 36px 20px 24px 20px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.Home .banner {
+  width: 375px;
+  height: 427px;
+  background-color: #f2f3f7;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.Home .banner section {
+  width: 200px;
+  height: 300px;
+  border-radius: 24px;
+  background: linear-gradient(158.71deg, #e8ebf2 2.84%, #f2f3f7 97.53%);
+  box-shadow: 10px 10px 30px rgba(15, 41, 107, 0.12);
+  position: relative;
+  top: 54px;
+  left: 88px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.Home .banner section h3 {
+  position: absolute;
+  top: 64px;
+  left: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 28px;
+  color: #ff6600;
+  margin: 0;
+}
+.Home .banner section a {
+  text-decoration: none;
+}
+.Home .banner section p {
+  width: 160px;
+  height: 96px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #767676;
+  position: absolute;
+  top: 104px;
+  left: 20px;
+  word-break: keep-all;
+}
+.Home .banner section span {
+  width: 160px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  text-align: center;
+}
+
+/* 불릿 스타일 변경 다른 방법은 뭐가 없을까 */
+.swiper-pagination-bullet {
+  width: 5px !important;
+  height: 5px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff6600 !important;
+}
+
+/* Common */
+.common {
+  width: 335px;
+  height: 137px;
+  background: #ffffff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  margin: 8px 0 0 20px;
+  position: relative;
+}
+
+.common .textBox {
+  width: 303px;
+  height: 72px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.common .textBox p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+.common .infoBox {
+  width: 303px;
+  height: 25px;
+  /* display: flex;
+  justify-content: space-between; */
+  position: absolute;
+  top: 100px;
+  left: 16px;
+  border-top: 1px solid #f0f0f6;
+}
+.common .infoBox span:first-child {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: #767676;
+  position: absolute;
+  top: 9px;
+}
+.common .arrow {
+  position: absolute;
+  top: 9px;
+  right: 198px;
+}
+.common .infoBox .point,
+.comment {
+  width: 45px;
+  height: 16px;
+  position: absolute;
+  top: 9px;
+}
+
+.common .infoBox .point {
+  right: 53px;
+}
+.common .infoBox .comment {
+  left: 258px;
+}
+.common .infoBox .point span,
+.comment span {
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: right;
+  position: absolute;
+  padding-left: 3px;
+  box-sizing: border-box;
+}
