@@ -2,16 +2,17 @@ import { useEffect, useState } from "react";
 
 export const Top = ({ id, index }) => {
   const [story, setStory] = useState([]);
-  const getStory = async () => {
-    const response = await fetch(
-      `https://hacker-news.firebaseio.com/v0/item/${id}.json`
-    );
-    const json = await response.json();
-    setStory(json);
-  };
+
   useEffect(() => {
+    const getStory = async () => {
+      const response = await fetch(
+        `https://hacker-news.firebaseio.com/v0/item/${id}.json`
+      );
+      const json = await response.json();
+      setStory(json);
+    };
     getStory();
-  }, []);
+  }, [id]);
 
   return (
     <section>

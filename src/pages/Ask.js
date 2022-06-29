@@ -8,10 +8,6 @@ const Ask = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [itemLists, setItemLists] = useState([]);
 
-  useEffect(() => {
-    console.log(itemLists);
-  }, [itemLists]);
-
   const getMoreItem = async () => {
     setIsLoaded(true);
     await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -20,15 +16,15 @@ const Ask = () => {
     setIsLoaded(false);
   };
 
-  const onIntersect = async ([entry], observer) => {
-    if (entry.isIntersecting && !isLoaded) {
-      observer.unobserve(entry.target);
-      await getMoreItem();
-      observer.observe(entry.target);
-    }
-  };
-
   useEffect(() => {
+    const onIntersect = async ([entry], observer) => {
+      if (entry.isIntersecting && !isLoaded) {
+        observer.unobserve(entry.target);
+        await getMoreItem();
+        observer.observe(entry.target);
+      }
+    };
+
     let observer;
     if (target) {
       observer = new IntersectionObserver(onIntersect, {
@@ -37,7 +33,7 @@ const Ask = () => {
       observer.observe(target);
     }
     return () => observer && observer.disconnect();
-  }, [target]);
+  }, [target, isLoaded]);
 
   const [id, setId] = useState([]);
 
