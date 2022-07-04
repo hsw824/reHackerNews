@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MyHeader from "../components/MyHeader";
-import { Top } from "../components/Top";
+import Top from "../components/Top";
 import TopStories from "../components/TopStories";
 import Loader from "../components/Loader";
 

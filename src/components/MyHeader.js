@@ -4,8 +4,7 @@ const MyHeader = () => {
   return (
     <header className="MyHeader">
       <div className="header_info">
-        <Link to={"/"}>
-          {" "}
+        <Link to="/">
           <img
             className="logo"
             src={process.env.PUBLIC_URL + "assets/logo.svg"}
@@ -28,16 +27,16 @@ const MyHeader = () => {
         />
       </div>
       <div className="gnb">
-        <NavLink className="nav" to={"/article"}>
+        <NavLink className="nav" to="/article">
           Article
         </NavLink>
-        <NavLink className="nav" to={"/ask"}>
+        <NavLink className="nav" to="/ask">
           Ask
         </NavLink>
-        <NavLink className="nav" to={"/jobs"}>
+        <NavLink className="nav" to="/jobs">
           Jobs
         </NavLink>
-        <NavLink className="nav" to={"/show"}>
+        <NavLink className="nav" to="/show">
           Show
         </NavLink>
       </div>

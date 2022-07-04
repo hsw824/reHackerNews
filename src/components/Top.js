@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const Top = ({ id, index }) => {
+const Top = ({ id, index }) => {
   const [story, setStory] = useState([]);
 
   useEffect(() => {
@@ -24,3 +24,5 @@ export const Top = ({ id, index }) => {
     </section>
   );
 };
+
+export default Top;

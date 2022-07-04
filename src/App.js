@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Article from "./pages/Article";
@@ -9,17 +9,17 @@ import Jobs from "./pages/Jobs";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/article" element={<Article />} />
-          <Route path="/ask" element={<Ask />} />
-          <Route path="/jobs" element={<Jobs />} />
-          <Route path="/show" element={<Show />} />
+          <Route path="article" element={<Article />} />
+          <Route path="ask" element={<Ask />} />
+          <Route path="jobs" element={<Jobs />} />
+          <Route path="show" element={<Show />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
